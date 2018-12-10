@@ -11,8 +11,8 @@ class Init {
 }
 
 class Bot extends Init {
-    say(message: string) {
-        return message + " " + this.name;
+    say(message: string, line:number) {
+        brick.showString(message, line)
     }
     moveXY(x: number, y: number) {
         //distance = radical Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)
